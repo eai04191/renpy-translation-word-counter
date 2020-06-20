@@ -1,0 +1,29 @@
+@tailwind base;
+
+:focus {
+    outline: none;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    @apply font-bold text-green-500;
+}
+
+.modal {
+    transition: opacity 0.2s ease;
+}
+
+.modal p {
+    @apply my-2;
+}
+
+body.modal-active {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+}
